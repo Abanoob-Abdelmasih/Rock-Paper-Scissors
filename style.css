@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Poppins:ital,wght@0,100;0,400;0,600;0,700;1,200&display=swap');
+
+/* :root {
+} */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Reusable classes */
+/* .container {
+  max-width: 160rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+} */
+
+.place-items-center {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.screen-sm-hidden {
+  display: none;
+}
+
+.screen-lg-hidden {
+  display: none;
+}
+
+html {
+  font-size: 62.5%;
+  min-height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.parent {
+  /* padding: 0 20rem; */
+  font-size: 2rem;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 2fr 4fr 2fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.text-container.player-won {
+  color: rgb(0, 231, 4);
+}
+.text-container.player-lose {
+  color: rgb(231, 31, 0);
+}
+
+.button-choices button {
+  background: transparent;
+  border: 6px solid black;
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 1.5rem 5rem;
+  margin-right: 1rem;
+}
+
+.text-container {
+  font-size: 3rem;
+  justify-self: center;
+  align-self: center;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.button-choices {
+  justify-self: center;
+  align-self: center;
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.player-score {
+  padding: 0 5rem;
+  /* justify-self: start; */
+  align-self: center;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.computer-score {
+  padding: 0 -5rem;
+  /* justify-self: start; */
+  align-self: center;
+  grid-column: -2/-1;
+  grid-row: 1/2;
+}
+
+.background-popup {
+  background: #363637c7;
+  position: absolute;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-popup.hidden {
+  display: none;
+}
+
+.popup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  width: 50rem;
+  height: 25rem;
+}
+
+.popup-text {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+
+.popup-again-button {
+  font-size: 2rem;
+  padding: 1rem 2rem;
+}

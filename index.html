@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main class="parent">
+      <h3 class="player-score">Player Score: <span class="player-score-span">0</span></h3>
+      <h3 class="computer-score">Computer Score: <span class="computer-score-span">0</span></h3>
+      <h1 class="text-container">Pick a choice...</h1>
+      <div class="button-choices">
+        <button class="btn rock cursor-pointer" data-rock="rock">Rock</button>
+        <button class="btn paper cursor-pointer" data-paper="paper">Paper</button>
+        <button class="btn scissors cursor-pointer" data-scissors="scissors">Scissors</button>
+      </div>
+    </main>
+    <div class="background-popup hidden">
+      <div class="popup">
+        <p class="popup-text">player won</p>
+        <button class="popup-again-button">Again?</button>
+      </div>
+    </div>
+  </body>
+  <script src="./confetti-falling-animation/confetti-falling-animation/confetti.js"></script>
+  <script src="script.js"></script>
+</html>
